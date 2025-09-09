@@ -40,7 +40,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Profile Image */}
             <div className="relative">
-              <div className="w-80 h-50 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
+              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
                 <img
                   src="/Profile.jpeg" // ✅ Correct path for public folder
                   alt="Mani Chokkara"
