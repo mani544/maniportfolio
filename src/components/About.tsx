@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { GraduationCap, Target, Heart, Lightbulb } from 'lucide-react';
 
-
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -26,7 +25,11 @@ const About = () => {
   return (
     <section id="about" ref={sectionRef} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div
+          className={`transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               About Me
@@ -35,31 +38,38 @@ const About = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-      {/* Profile Image */}
-<div className="relative">
-  <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
-    <img
-      src="public/Profile.jpeg"   // ✅ not "public/Profile.jpeg"
-      alt="Mani Chokkara"
-      className="w-full h-full object-cover object-center"
-    />
-  </div>
-
-
-
+            {/* Profile Image */}
+            <div className="relative">
+              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
+                <img
+                  src="/Profile.jpeg" // ✅ Correct path for public folder
+                  alt="Mani Chokkara"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
 
             {/* About Content */}
             <div className="space-y-6">
               <h4 className="text-3xl font-bold text-gray-900 mb-4">
                 TECH INNOVATOR & DATA ANALYST
               </h4>
-              
+
               <p className="text-lg text-gray-700 leading-relaxed">
-                Currently contributing to GradXpert as a Content Researcher, utilizing Python, LangChain, and Streamlit to deliver actionable insights derived from data. Academic pursuits at Godavari Global University in B.Tech Computer Science & Data Science reinforce this professional role, fostering a strong foundation in analytics and visualization. 
+                Currently contributing to GradXpert as a Content Researcher,
+                utilizing Python, LangChain, and Streamlit to deliver actionable
+                insights derived from data. Academic pursuits at Godavari Global
+                University in B.Tech Computer Science & Data Science reinforce
+                this professional role, fostering a strong foundation in
+                analytics and visualization.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Collaborated with Accenture and Tata Group through virtual projects, analyzing datasets and creating impactful visual presentations to address business challenges. Motivated to harness AI and data-driven solutions, with aspirations to drive innovation and strategic impact in tech industries.
+                Collaborated with Accenture and Tata Group through virtual
+                projects, analyzing datasets and creating impactful visual
+                presentations to address business challenges. Motivated to
+                harness AI and data-driven solutions, with aspirations to drive
+                innovation and strategic impact in tech industries.
               </p>
 
               {/* Key Points */}
@@ -123,5 +133,3 @@ const About = () => {
 };
 
 export default About;
-  )
-}
