@@ -39,7 +39,7 @@ const About = () => {
 <div className="relative">
   <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
     <img
-      src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+      src="C:\Users\BH.KOWSHIK VARMA\Downloads\WhatsApp Image 2025-09-09 at 9.27.09 PM.jpeg"
       alt="Mani Chokkara"
       className="w-full h-full object-cover"
     />
