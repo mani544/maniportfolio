@@ -78,47 +78,47 @@ const Certifications = () => {
           </div>
 
           {/* Certification Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {otherCerts.map((cert, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300 ${
+                className={`bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-all duration-300 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: `${400 + index * 150}ms` }}
               >
                 {/* Date */}
-                <div className="text-sm text-gray-500 mb-2">{cert.date}</div>
+                <div className="text-base text-gray-500 mb-3">{cert.date}</div>
 
                 {/* Title */}
-                <h4 className="text-lg font-bold text-gray-900 mb-1">{cert.title}</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">{cert.title}</h4>
 
                 {/* Issuer */}
-                <p className="text-blue-600 font-medium mb-4">{cert.issuer}</p>
+                <p className="text-blue-600 font-medium mb-6">{cert.issuer}</p>
 
                 {/* Certificate Image */}
                 {cert.image && (
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-center mb-6">
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="w-48 h-48 object-cover border shadow-sm"
+                      className="w-64 h-64 object-cover border shadow-sm rounded-lg"
                     />
                   </div>
                 )}
 
                 {/* Skills */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {cert.skills.slice(0, 3).map((skill, i) => (
                     <span
                       key={i}
-                      className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded"
+                      className="bg-gray-100 text-gray-700 text-sm px-3 py-2 rounded"
                     >
                       {skill}
                     </span>
                   ))}
                   {cert.skills.length > 3 && (
-                    <span className="text-xs text-gray-500">
+                    <span className="text-sm text-gray-500">
                       +{cert.skills.length - 3} more
                     </span>
                   )}
@@ -129,10 +129,10 @@ const Certifications = () => {
                   href={cert.credential}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  className="flex items-center text-blue-600 hover:text-blue-800 transition-colors text-base font-medium"
                 >
                   <span className="mr-1">View</span>
-                  <ExternalLink size={14} />
+                  <ExternalLink size={16} />
                 </a>
               </div>
             ))}
