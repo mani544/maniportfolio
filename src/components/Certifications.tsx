@@ -23,15 +23,51 @@ const Certifications = () => {
   }, []);
 
   const certifications = [ 
-  {
-      title: "Introduction to Career Skills in Data Analytics",
-      issuer: "Linked In & Microsoft",
-      date: "2025-Aug",
-      description: "Introduction to Career Skills in Data Analytics",
-      skills: ["Data Analytics","Tech Carrer Skills","Dashboards"],
-      credential: "https://www.linkedin.com/learning/certificates/3b65cf91238616c9dbacadd413df370cbc9483beebda9f24c58acbd28935aab3",
-      featured: false
-    },
+  <div className="relative w-80 p-4 bg-white rounded-xl shadow-md">
+  {/* Date */}
+  <p className="text-gray-400 text-sm mb-2">2025-Aug</p>
+
+  {/* Title */}
+  <h3 className="text-lg font-semibold mb-1">
+    Introduction to Career Skills in Data Analytics
+  </h3>
+
+  {/* Issuer */}
+  <p className="text-blue-600 mb-3">Linked In & Microsoft</p>
+
+  {/* Certificate Image in middle (Square) */}
+  <div className="flex justify-center mb-3">
+    <img
+      src="/path-to-your-image/8eecc53f-455e-432d-9bfa-bee81421143a.png"
+      alt="Certificate"
+      className="w-56 h-56 object-cover shadow" 
+    />
+  </div>
+
+  {/* Skills */}
+  <div className="flex flex-wrap gap-2 mb-3">
+    <span className="px-2 py-1 bg-gray-100 rounded-md text-sm">
+      Data Analytics
+    </span>
+    <span className="px-2 py-1 bg-gray-100 rounded-md text-sm">
+      Tech Career Skills
+    </span>
+    <span className="px-2 py-1 bg-gray-100 rounded-md text-sm">
+      Dashboards
+    </span>
+  </div>
+
+  {/* Credential Link */}
+  <a
+    href="https://www.linkedin.com/learning/certificates/3b65cf91238616c9dbacadd413df370cbc9483beebda9f24c58acbd28935aab3"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline"
+  >
+    View →
+  </a>
+</div>
+
     {
       title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
       issuer: "Oracle",
