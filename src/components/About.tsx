@@ -38,11 +38,16 @@ const About = () => {
       {/* Profile Image */}
 <div className="relative">
   <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
-      <img
-  src="public/Profile.jpeg"
-  alt="Mani Chokkara"
-  className="w-full h-full object-cover"
-/>
+      <div className="relative">
+  <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
+    <img
+      src="/Profile.jpeg"   // ✅ not "public/Profile.jpeg"
+      alt="Mani Chokkara"
+      className="w-full h-full object-cover object-center"
+    />
+  </div>
+</div>
+
   </div>
 </div>
           
