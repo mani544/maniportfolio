@@ -33,6 +33,9 @@ const Projects = () => {
       demo: "#",
       category: "Data Science"
     },
+
+
+    
     {
       title: "AI-Powered Content Analyzer",
       description: "Machine learning tool that analyzes YouTube content performance, suggests optimization strategies, and predicts viral potential.",
