@@ -29,7 +29,7 @@ const Certifications = () => {
       date: "2025-Aug",
       description: "Introduction to Career Skills in Data Analytics",
       skills: ["Data Analytics", "Tech Career Skills", "Dashboards"],
-      image: "/certificates/data-analytics.png", // ✅ add your image here
+      image: "public/Career Linked In.jpg", // ✅ add your image here
       credential: "https://www.linkedin.com/learning/certificates/3b65cf91238616c9dbacadd413df370cbc9483beebda9f24c58acbd28935aab3",
       featured: false,
     },
