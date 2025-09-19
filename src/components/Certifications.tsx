@@ -102,7 +102,7 @@ const Certifications = () => {
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="w-64 h-64 object-cover border shadow-sm rounded-lg"
+                     className="w-80 h-80 object-cover border shadow-sm rounded-lg"
                     />
                   </div>
                 )}
